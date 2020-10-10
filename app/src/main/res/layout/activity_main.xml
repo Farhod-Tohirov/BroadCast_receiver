@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:title="Ogohlantiruvchi" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#00159F"
+        android:text="Bu dastur orqali quyida berilgan hodisalar uchirilganda yoki yoqilganda ovoz chiqarib ogohlantiradi (o'zbek tilida☺️)"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="2dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/chargeOn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="2dp"
+                android:drawableStart="@drawable/ic_baseline_play_arrow_24"
+                android:drawableLeft="@drawable/ic_baseline_play_arrow_24"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="Zaryad"
+                android:textSize="18sp"
+                android:thumb="@drawable/custom_thumb"
+                app:track="@drawable/custom_track" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="2dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/wifiOn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="2dp"
+                android:drawableStart="@drawable/ic_baseline_play_arrow_24"
+                android:drawableLeft="@drawable/ic_baseline_play_arrow_24"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="WIFI"
+                android:textSize="18sp"
+                android:thumb="@drawable/custom_thumb"
+                app:track="@drawable/custom_track" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="2dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/bluetoothOn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="2dp"
+                android:drawableStart="@drawable/ic_baseline_play_arrow_24"
+                android:drawableLeft="@drawable/ic_baseline_play_arrow_24"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="Bluetooth"
+                android:textSize="18sp"
+                android:thumb="@drawable/custom_thumb"
+                app:track="@drawable/custom_track" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="2dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/pilotOn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="2dp"
+                android:drawableStart="@drawable/ic_baseline_play_arrow_24"
+                android:drawableLeft="@drawable/ic_baseline_play_arrow_24"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="Samalyot rejimi"
+                android:textSize="18sp"
+                android:thumb="@drawable/custom_thumb"
+                app:track="@drawable/custom_track" />
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="@string/ogohlantirish_tovushini_eshitishni_hohlasangiz_mos_yozuvni_ustiga_2_sekund_bosib_turin"
+        android:textColor="#FF0000"
+        android:textSize="16sp" />
+
+</LinearLayout>
